@@ -1,0 +1,192 @@
+/* General button styles */
+.link-button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Safe Links - Clean and standard styling */
+.link-button.safe {
+    background-color: #28a745; /* Trustworthy green */
+    color: white;
+    padding: 0.625rem 1.125rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #218838;
+    font-size: 0.9375rem;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0.1875rem #1e7e34;
+}
+
+.link-button.safe:hover {
+    background-color: #218838;
+    box-shadow: 0 0.3125rem #155724;
+}
+
+/* Phishy Links - Flashy without direct animation */
+.link-button.phishy {
+    background-color: #ff6f00; /* Bright orange */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    font-family: Tahoma, sans-serif;
+}
+
+.link-button.phishy:hover {
+    background-color: #ff3d00; /* Even brighter on hover */
+}
+
+/* Link 3 - "Click to Claim Your Prize" - Eye-catching, gradient background */
+.link-button.safe:nth-of-type(3) {
+    background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+    color: #212121;
+    padding: 0.75rem 1.375rem;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    border-radius: 0.625rem;
+    border: 0.0625rem solid #ffeb3b;
+}
+
+.link-button.safe:nth-of-type(3):hover {
+    background: linear-gradient(135deg, #ffeb3b 0%, #ff5722 100%);
+    border-color: #fdd835;
+}
+
+/* Link 4 - "Urgent: Account Suspended" - Aggressive, red border and uppercase */
+.link-button.malishy {
+    color: #d32f2f; /* Bright red */
+    background: none;
+    font-size: 1.0625rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 0.125rem solid #d32f2f;
+    padding: 0.5rem;
+    font-family: Impact, sans-serif;
+}
+
+.link-button.malishy:hover {
+    color: white;
+    background-color: #d32f2f;
+    border-bottom: 0.125rem solid white;
+}
+
+/* Link 5 - "Congratulations! You’ve Won!" - Spammy with rainbow gradient */
+.link-button.phishy:nth-of-type(2) {
+    background: linear-gradient(45deg, #ff4081, #ffea00, #4caf50, #2196f3, #ff4081);
+    color: #000;
+    padding: 0.9375rem 1.5625rem;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 1rem;
+    text-shadow: 0 0 0.3125rem rgba(0 0 0 / 50%);
+    border-radius: 0.3125rem;
+}
+
+.link-button.phishy:nth-of-type(2):hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+/* Link 6 - "Confirm Your Email Now" - Shady blue with underline */
+.link-button.safe:nth-of-type(6) {
+    color: #1976d2; /* Distracting blue */
+    background: none;
+    padding: 0.625rem;
+    font-family: Georgia, serif;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.link-button.safe:nth-of-type(6):hover {
+    color: #004ba0;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* Link 7 - "Security Alert: Action Required" - Bold with harsh colors */
+.link-button.malishy:nth-of-type(2) {
+    background-color: #f44336; /* Alert red */
+    color: white;
+    padding: 0.875rem 1.25rem;
+    font-size: 1.125rem;
+    font-family: "Courier New", monospace;
+    border-radius: 0.1875rem;
+    border: 0.125rem solid #b71c1c;
+    text-shadow: 0.0625rem 0.0625rem #000;
+}
+
+.link-button.malishy:nth-of-type(2):hover {
+    background-color: #d32f2f;
+    border-color: #9a0007;
+}
+
+/* Link 8 - "Final Notice: Update Payment Info" - Simple yet alarming */
+.link-button.malishy:nth-of-type(3) {
+    background-color: #e53935; /* Notice red */
+    color: #fff;
+    padding: 0.625rem 0.9375rem;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    box-shadow: 0 0 0.3125rem rgba(0 0 0 / 30%);
+    border-radius: 0.125rem;
+}
+
+.link-button.malishy:nth-of-type(3):hover {
+    background-color: #c62828;
+    box-shadow: 0 0 0.625rem rgba(0 0 0 / 50%);
+}
+
+/* Link 9 - "Special Offer, Click Here!" - Flashy with glowing effect */
+.link-button.phishy:nth-of-type(3) {
+    background-color: #673ab7; /* Flashy purple */
+    color: #fff;
+    padding: 1rem 1.5rem;
+    font-family: "Arial Black", sans-serif;
+    border: 0.1875rem double #7e57c2;
+    border-radius: 0.75rem;
+}
+
+.link-button.phishy:nth-of-type(3):hover {
+    border-color: #5e35b1;
+}
+
+/* Link 10 - "Reset Your Password Instantly" - Simple yet bold blue */
+.link-button.safe:nth-of-type(10) {
+    color: #1565c0; /* Bold blue */
+    background-color: #e3f2fd;
+    padding: 0.5rem 0.875rem;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    border: 0.0625rem solid #90caf9;
+    border-radius: 0.5rem;
+}
+
+.link-button.safe:nth-of-type(10):hover {
+    color: #0d47a1;
+    background-color: #bbdefb;
+    border-color: #64b5f6;
+}
+
+/* Reusable Animations */
+
+/* Blinking animation class */
+.blink {
+    animation: blink 3.5s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Glowing animation class */
+.glow {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 0.625rem #fff; }
+    100% { box-shadow: 0 0 1.25rem #ff4081; }
+}

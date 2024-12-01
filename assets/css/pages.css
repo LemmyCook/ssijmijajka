@@ -1,0 +1,103 @@
+body {
+    text-align: left;
+}
+
+/* Common Header Styling */
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 2rem 0 1rem;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Phishing Page Specific Styles */
+
+.close {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+
+body.phishy {
+    background-color: #fff8e1; /* Soft yellow background */
+    color: #c0392b; /* Dark red text for urgency */
+}
+
+body.phishy h1 {
+    color: #e74c3c; /* Bright red for strong alert */
+}
+
+body.phishy .close {
+    background-color: #e74c3c;
+    color: #fff8e1;
+}
+
+/* Malicious Page Specific Styles */
+body.malishy {
+    background-color: #fbe9e7; /* Light red/pink background */
+    color: #d32f2f; /* Dark red text for urgency */
+}
+
+body.malishy h1 {
+    color: #c62828; /* Darker red for stronger alert */
+}
+
+body.malishy .close {
+    background-color: #c0392b;
+    color: #fff8e1;
+}
+
+/* Safe Page Specific Styles */
+body.safe {
+    background-color: #e8f5e9; /* Light green background */
+    color: #2e7d32; /* Dark green text for reassurance */
+}
+
+body.safe h1 {
+    color: #388e3c; /* Green for a positive indication */
+}
+
+body.safe .close {
+    background-color: #388e3c;
+    color: #fff8e1;
+}
+
+/* Common Paragraph Styling */
+p {
+    max-width: 40rem;
+    margin: 1.5rem auto;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Additional Styles for Emphasis */
+ul li {
+    font-size: 1.125rem;
+    color: #666;
+}

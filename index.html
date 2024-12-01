@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishy or Malishy?</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/screen.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/overlay.css">
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script2.js"></script>
+
+</head>
+<body>
+<header>
+    <h1>Phishy or Malishy?</h1>
+</header>
+<main>
+    <p>Amidst the links below there are three types of links: </p>
+    <dl>
+        <dt class="safe">Safe:</dt>
+        <dd>Safe link, there are no consequences. Good choice.</dd>
+        <dt class="phishy">Fishy:</dt>
+        <dd>This link was a phishing attempt. Your credentials have been stolen.</dd>
+        <dt class="malishy">Malishy:</dt>
+        <dd>The link was malicious. Your system has been compromised.</dd>
+    </dl>
+
+
+    <div id="link-list">
+        <a href="pages/safe.html" class="link-button safe" data-status="safe">Update Your Account Info</a>
+        <a href="pages/fishy.html" class="link-button phishy blink" data-status="fishy">Verify Your Identity Here</a>
+        <a href="pages/safe.html" class="link-button safe" data-status="safe">Click to Claim Your Prize</a>
+        <a href="pages/malishy.html" class="link-button malishy" data-status="malishy">Urgent: Account Suspended</a>
+        <a href="pages/fishy.html" class="link-button phishy blink" data-status="fishy">Congratulations! You’ve Won!</a>
+        <a href="pages/safe.html" class="link-button safe" data-status="safe">Confirm Your Email Now</a>
+        <a href="pages/malishy.html" class="link-button malishy" data-status="malishy">Security Alert: Action
+            Required</a>
+        <a href="pages/malishy.html" class="link-button malishy" data-status="malishy">Final Notice: Update Payment
+            Info</a>
+        <a href="pages/fishy.html" class="link-button phishy glow" data-status="fishy">Special Offer, Click Here!</a>
+        <a href="pages/safe.html" class="link-button safe" data-status="safe">Reset Your Password Instantly</a>
+
+    </div>
+
+    <form action="protect-me.php" method="POST">
+        <fieldset>
+            <legend>Shields</legend>
+            <p>Activate one or more of the shields below to protect yourself from possible infection.</p>
+            <input type="checkbox" value="fishy" name="shields" id="fishy"><label for="fishy">I fear credential theft.
+            Block
+            phishing links</label>
+            <input type="checkbox" value="malishy" name="shields" id="malishy"><label for="malishy">I'm afraid malware
+            will
+            infect my system. Block malicious links</label>
+            <input type="checkbox" value="all" name="shields" id="all"><label for="all">Better safe than sorry. Block
+            all
+            outgoing traffic.</label>
+            <button>Protect me</button> <p class="statusmessage"></p>
+        </fieldset>
+    </form>
+</main>
+<section id="overlay" class="hidden">
+    <div class="content-box">
+        <h2>All outgoing traffic blocked</h2>
+        <p>You have blocked all outgoing traffic, so even though you can't browse the web, you'll still be kept safe
+            from harm. Good, right?</p>
+        <a href="#" class="close">I understand</a>
+    </div>
+</section>
+</body>
+</html>
